@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Awesome">
+        <title>Accounting System</title>
+    </head>
+    <body style="background-color:cream;">
+    <h1>Accounting System</h1>
+        <u><h2>Date range</h2></u>
+        <p style="margin-left: 20px">Beginning Date <input type="date"/></p>
+        <p style="margin-left: 20px">Ending Date <input type="date"/></p>
+    <u><h2>Cost Of Sales</h2></u>
+        Cost Of Goods Sold   <b>R</b><input type="text" id="num1"><br>
+        Cose Of Services     <b>R</b><input type="text" id="num2">
+    <h4 id="Total Cost of sales"></h4>
+    
+
+    <button onclick="calculate1()">Calculate Total Cost of sales</button>
+<script>
+function calculate1()
+{
+    var x1 = document.getElementById("num1").value;
+    var x2 = document.getElementById("num2").value;
+    var result = parseFloat(x1)+parseFloat(x2);
+
+    if(!isNaN(result))
+    {
+        document.getElementById("Total Cost of sales").innerHTML="Total Cost of sales is R"+result;
+    }
+}
+</script>
+
+
+<u><h2>Revenue</h2></u>
+Sales Revenue <b>R</b> <input type="text" id="num3"><br>
+Other Revenue <b>R</b><input type="text" id="num4"><br>
+<h4 id="Total Revenue"></h4>
+
+
+<button onclick="calculate2()">Calculate Total Revenue</button>
+<script>
+function calculate2()
+{
+    var x1 = document.getElementById("num3").value;
+    var x2 = document.getElementById("num4").value;
+    var result = parseFloat(x1)+parseFloat(x2);
+
+    if(!isNaN(result))
+    {
+        document.getElementById("Total Revenue").innerHTML="Total Revenue is R"+result;
+    }
+}
+</script>
+
+<u><h2>Gross Profit</h2></u>
+
+        
+
+
+       
+    </body>
+</html>
+  
+
